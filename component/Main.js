@@ -7,7 +7,7 @@ function Main() {
         <Flex>
             <Box flexBasis="780px" p={"30px 36px 15px 36px"} display="flex" flexDirection="column" gap="20px" borderRight="1px solid #242731">
                 <Flex justifyContent="space-between" alignItems="center">
-                    <Box fontWeight="600" fontSize="18px" lineHeight="18px" color="#FFFFFF" borderBottom="1px solid #3772FF" pb="7px" fontFamily="Poppins">Section</Box>
+                    <Box fontWeight="600" fontSize="18px" lineHeight="18px" color="#FFFFFF" borderBottom="1px solid #3772FF" pb="7px" fontFamily="Inter">Section</Box>
                     <Flex fontFamily="Inter" alignItems="center" gap="20px" bgColor="#191B20" borderRadius="12px" p="5px">
                         <Flex gap="5px" alignItems="center">
                             <Image src="Wallet.png" width="30px" position="relative" top="5px" />
@@ -35,17 +35,17 @@ function Main() {
                     </Flex>
                     <Button bgColor="#3772FF" borderRadius="10px" height="36px" gap="7px"> <Image src="Group.png" w="16px" />Custom link</Button>
                 </Flex>
-                <Flex color="#FFFFFF" gap="22px">
+                <Flex color="#FFFFFF" gap="22px" fontFamily="Poppins">
                     <Flex flex={1} bgColor="#191B20" borderRadius="16px" flexDirection="column" gap="18px" p="22px">
                         <Box display="flex" gap="10px"><Image src="Group1.png" width="24px" /> <Box fontWeight="700" fontSize="20px" lineHeight="24px" >12.5% of fee</Box></Box>
-                        <Flex gap="15px" flexDirection="column">
+                        <Flex gap="15px" flexDirection="column" fontFamily="Inter">
                             <Box fontWeight="500" fontSize="16px" lineHeight="16px" color="#808191">Your Referral Link for xyz</Box>
                             <Flex alignItems="center" bgColor="#242731" borderRadius="8px" p="20px" pr="20px" gap="28px" fontWeight="700" fontSize="14px" lineHeight="24px"><Box >https://unityexchange.design </Box> <Image src="ungroup.png" w="16px" h="16px" /></Flex>
                         </Flex>
                     </Flex>
-                    <Flex flex={1} bgColor="#191B20" borderRadius="16px" flexDirection="column" gap="18px" p="22px">
+                    <Flex flex={1} bgColor="#191B20" borderRadius="16px" flexDirection="column" gap="18px" p="22px" fontFamily="Poppins">
                         <Box display="flex" gap="10px"><Image src="Group1.png" width="24px" /> <Box fontWeight="700" fontSize="20px" lineHeight="24px" >12.5% of fee</Box></Box>
-                        <Flex gap="15px" flexDirection="column">
+                        <Flex gap="15px" flexDirection="column" fontFamily="Inter">
                             <Box fontWeight="500" fontSize="16px" lineHeight="16px" color="#808191">Your Referral Link for xyz</Box>
                             <Flex display="flex" alignItems="center" bgColor="#242731" borderRadius="8px" p="20px" gap="28px" fontWeight="700" fontSize="14px" lineHeight="24px"><Box >https://unityexchange.design </Box> <Image src="ungroup.png" w="16px" h="16px" /></Flex>
                         </Flex>
@@ -53,14 +53,14 @@ function Main() {
                 </Flex>
                 <Section />
             </Box>
-            <Flex flexBasis="406px" p={"30px 36px 0px 36px"} flexDirection="column" gap="30px" >
+            <Flex flexBasis="406px" p={"30px 36px 0px 36px"} flexDirection="column" gap="30px" fontFamily="Inter" >
                 <Flex justifyContent="space-between" gap="14px">
-                    <Flex gap="9px" alignItems="center" bgColor="#353945" borderRadius="10px" p="5px 14px">
+                    <Flex gap="5px" alignItems="center" bgColor="#353945" borderRadius="10px" p="5px 14px">
                         <Image src="Ellipse2.png" width="20px" />
-                        <Box fontWeight="400" fontSize="15px" lineHeight="29px" color="#FFFFFF"> Avalanche</Box>
+                        <Box fontFamily="Poppins" fontWeight="400" fontSize="15px" lineHeight="29px" color="#FFFFFF" > Avalanche</Box>
                         <Image src="Vector.png" width="9px" />
                     </Flex>
-                    <Flex gap="13px" alignItems="center" border="1px solid #3772FF" borderRadius="10px" p="5px 15px">
+                    <Flex gap="5px" alignItems="center" border="1px solid #3772FF" borderRadius="10px" p="5px 15px">
                         <Image src="Wallet.png" w="30px" position="relative" top="5px" />
                         <Flex gap="16px" alignItems="center"><Box fontWeight="600" fontSize="14px" lineHeight="29px" color="#FFFFFF" textTransform="uppercase">0xf6...1353</Box>
                             <Image src="Vector.png" width="9px" h="6px" /></Flex>
@@ -69,13 +69,13 @@ function Main() {
                 <Flex color="#FFFFFF" flexDirection="column" gap="7px" >
                     <Flex flexDirection="column" gap="20px">
                         <Flex alignItems="center" gap="14px"><Image src="Path.png" w="12px" h="10px" /> <Box fontWeight="500" fontSize="18px" lineHeight="24px" >Custom link</Box></Flex>
-                        <Box fontWeight="400" fontSize="16px" lineHeight="48px">https://testnet.xyz.xyz/trade?ref=</Box>
+                        <Box fontFamily="Poppins" fontWeight="400" fontSize="16px" lineHeight="48px">https://testnet.xyz.xyz/trade?ref=</Box>
                     </Flex>
                     <Flex flexDirection="column" gap="30px">
                         <Input bgColor="#242731" borderRadius="12px" placeHolder="ENTER" border="0px" />
                         <Flex gap="18px" justifyContent="space-around">
-                            <Button bgColor="#3772FF" borderRadius="10px" height="36px" gap="7px"> <Image src="Group.png" w="16px" />Custom link</Button>
-                            <Button bgColor="#000000" borderRadius="12px" height="36px" gap="7px" border="1px solid #242731" p="6px 27px"> <Image src="deposit.png" w="16px" />Cancel</Button>
+                            <Button bgColor="#3772FF" borderRadius="10px" height="36px" gap="7px" fontWeight="700" fontSize="14px" lineHeight="24px"> <Image src="Group.png" w="16px" />Custom link</Button>
+                            <Button bgColor="#000000" borderRadius="12px" height="36px" gap="7px" border="1px solid #242731" p="6px 27px" fontWeight="700" fontSize="14px" lineHeight="24px"> <Image src="deposit.png" w="16px" />Cancel</Button>
                         </Flex>
                     </Flex>
                 </Flex>

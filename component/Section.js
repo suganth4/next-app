@@ -16,7 +16,7 @@ function Section() {
     return (
         <>
             {data === "" ? <Spinner /> :
-                (<Tabs position="relative" variant="unstyled">
+                (<Tabs position="relative" variant="unstyled" fontFamily="Inter">
                     <TabList gap="20px">
                         <Tab fontWeight="600" fontSize="18px" color="#808191" lineHeight="18px" _selected={{ color: "#FFFFFF" }} px="0px">First Tab</Tab>
                         <Tab fontWeight="600" fontSize="18px" color="#808191" lineHeight="18px" _selected={{ color: "#FFFFFF" }} px="0px">Second Tab</Tab>
@@ -26,10 +26,8 @@ function Section() {
                         height="2px"
                         bg="blue.500"
                         borderRadius="1px"
-
                     />
                     <TabPanels >
-
                         {
                             data.map((v) => {
                                 return (<TabPanel px="0px">
@@ -54,11 +52,11 @@ function Section() {
                                                     <Box fontWeight="500" fontSize="14px" lineHeight="24px" color="#808191" align="center">{v.state}</Box>
                                                 </Flex>
                                             </Flex>
-                                            <Flex justifyContent="space-between" gap="80px">
+                                            <Flex justifyContent="space-between" gap="80px" alignItems="center">
                                                 <Box fontWeight="600" fontSize="14px" lineHeight="24px" className="code">{v.user.substring(0, 5) + '..' + v.user.slice(-7)}</Box>
                                                 <Flex flexDirection="column" alignItems="center">
                                                     <Box fontWeight="600" fontSize="14px" lineHeight="24px">{v.referral_earnings + ".BNB"}</Box>
-                                                    <Flex fontWeight="600" fontSize="12px" lineHeight="16px" color="#808191" alignItems="center" gap="6px"><Box>View on BSC Scan</Box><Image src="Group2.png" w="10px" h="10px" /></Flex>
+                                                    <Flex fontWeight="600" fontSize="12px" lineHeight="16px" color="#808191" alignItems="center" gap="6px" whiteSpace="nowrap"><Box>View on BSC Scan</Box><Image src="Group2.png" w="10px" h="10px" /></Flex>
                                                 </Flex>
                                             </Flex>
                                         </Flex>

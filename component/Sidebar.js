@@ -7,6 +7,7 @@ import {
   Button,
   Image
 } from '@chakra-ui/react';
+import Header from './Header';
 
 const LinkItems = [
   { name: 'Home', icon: "1.png" },
@@ -53,7 +54,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
       <Flex alignItems="center" mx="8" justifyContent="space-between" color="#FFFFFF">
         <Flex alignItems="center" gap="8px">
           <Image src="Group5.png" w="30px" h="30px" />
-          <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+          <Text fontFamily="Poppins" fontSize="23px" lineHeight="31px"  fontWeight="bold">
             Name
           </Text>
         </Flex>
@@ -69,8 +70,8 @@ const SidebarContent = ({ onClose, ...rest }) => {
           ))}
         </Flex>
         <Flex flexDirection="column" gap="21px">
-          <Flex gap="7px" justifyContent="center">
-            <Flex borderRadius="10px" p="5px 15px" alignItems="center" gap="3px" bgColor="#242731" color="#FFFFFF"> <Image src="Group5.png" w="16px" h="17px" /> $0.90</Flex>
+          <Flex gap="7px" justifyContent="center" fontFamily="Inter">
+            <Flex borderRadius="10px" p="3px 15px" alignItems="center" gap="3px" bgColor="#242731" color="#FFFFFF" fontSize="14px" lineHeight="29px"> <Image src="Group5.png" w="16px" h="17px" /> $0.90</Flex>
             <Button borderRadius="10px" h="33px" bgColor="#A3E3FF" fontWeight="600" fontSize="14px" lineHeight="29px" color="#3772FF">Buy $XYZ</Button>
           </Flex>
           <Flex gap="13px" justifyContent="start" alignItems="center" pl="30px">
@@ -89,7 +90,6 @@ const SidebarContent = ({ onClose, ...rest }) => {
 
 
 const NavItem = ({ icon, children, ...rest }) => {
-  console.log(icon.includes("10") , icon)
   return (
     <Link href="#" style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
@@ -107,8 +107,8 @@ const NavItem = ({ icon, children, ...rest }) => {
           bg: '#353945',
           color: 'white',
         }}
-        bgColor={icon.includes("9") ? "#353945":""}
-        color={icon.includes("9") ? "#FFFFFF":""}
+        bgColor={icon.includes("9") ? "#353945" : ""}
+        color={icon.includes("9") ? "#FFFFFF" : ""}
         {...rest}>
         {icon && (
           <Image src={icon} w="18px" h="18px" mr="4" />
@@ -116,12 +116,5 @@ const NavItem = ({ icon, children, ...rest }) => {
         {children}
       </Flex>
     </Link>
-  );
-};
-
-
-const Header = () => {
-  return (
-    <Flex bgColor="#3772FF" h="36px" justifyContent="center" fontWeight="600" fontSize="14px" lineHeight="26px" color="#FFFFFF" alignItems="center">Lorem Ipsum is simply dummy text of the printing</Flex>
   );
 };
